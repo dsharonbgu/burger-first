@@ -1,19 +1,22 @@
 import  React from 'react';
 import Auxiliary from '../../hoc/Auxiliary';
-import classes from  './Layout.css';
+//import classes from  './Layout.css';
 
 
 
-
+const style ={
+    marginTop: '16px'
+};
 
 
 
 const layout = (props) => (
     <Auxiliary>
         <div>Toolbar, Sidebar, Backrop</div>
-        <main className={classes.Content}>
+        <div //className={classes.Content}
+            style={style} >
             {props.children}
-        </main>
+        </div>
     </Auxiliary>
 );
 
